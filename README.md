@@ -18,7 +18,7 @@ The Shopping List Application is a web-based tool that allows users to manage th
 ### Installation
 1. Clone the repository or download the ZIP file.
 ```bash
-git clone https://github.com/your-username/interactive-shopping-list.git
+git clone git@github.com:eugene12345678/Wk2-Code-Challenge.git
 ```
 2. Navigate to the project directory.
 ```bash
@@ -54,3 +54,5 @@ cd wk2-code-challenge
 - `Event Handling`: Reinforcing the use of event listeners to create interactive applications.
 #### Technologies Used
 HTML, CSS, JavaScript
+##### you can view my site here
+https://eugene12345678.github.io/Wk2-Code-Challenge/
