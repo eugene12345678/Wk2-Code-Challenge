@@ -35,7 +35,13 @@ h2 {
     top: 10%;
     font-size: xx-large;
     font-style: italic;
-    background-color: gold;
+    
+    animation: glowing 1s infinite;
+}
+@keyframes glowing {
+    0% { text-shadow: 0 0 10px #ff0000; }
+    50% { text-shadow: 0 0 20px #ffd900; }
+    100% { text-shadow: 0 0 10px #ff00ff; }
 }
 
 .input-group {
