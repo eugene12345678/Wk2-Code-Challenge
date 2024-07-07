@@ -54,5 +54,8 @@ cd wk2-code-challenge
 - `Event Handling`: Reinforcing the use of event listeners to create interactive applications.
 #### Technologies Used
 HTML, CSS, JavaScript
-##### you can view my site here
+
+##### You can view my site here
 https://eugene12345678.github.io/Wk2-Code-Challenge/
+#### AUTHOR
+- Eugene Mathenge
