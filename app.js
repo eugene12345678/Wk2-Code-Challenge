@@ -35,11 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.stopPropagation();
                 const newName = prompt('Edit item name:', item.name);
                 const newQuantity = prompt('Edit item quantity:', item.quantity);
-                if (newName && newQuantity) {
+                if (newName && newQuantity && !isNaN(newQuantity)) {
                     items[index].name = newName;
                     items[index].quantity = newQuantity;
                     updateLocalStorage();
                     renderList();
+                } else {
+                    alert('Please enter a valid name and quantity.');
                 }
             });
 
@@ -78,13 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const newItem = itemInput.value.trim();
         if (newItem) {
             const newQuantity = prompt('How many items do you want?');
-            if (newQuantity) {
+            if (newQuantity && !isNaN(newQuantity)) {
                 items.push({ name: newItem, quantity: newQuantity, purchased: false });
                 itemInput.value = '';
                 updateLocalStorage();
                 renderList();
             } else {
-                alert('Please enter a quantity.');
+                alert('Please enter a valid quantity.');
             }
         } else {
             alert('Please enter an item name.');
