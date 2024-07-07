@@ -1,3 +1,7 @@
+
+
+
+
 body {
     background-image: url(https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/POLL/ivnhtzaaskgfokng9nkyuw.jpg);
     background-repeat: no-repeat;
@@ -13,8 +17,6 @@ body {
 }
 
 .container {
-    position: absolute;
-    left: 600px;
     background-image: url(https://media.wired.com/photos/5c9040ee4950d24718d6da99/16:9/w_2400,h_1350,c_limit/shoppingcart-1066110386.jpg);
     padding: 20px;
     border-radius: 10px;
@@ -22,7 +24,6 @@ body {
     width: 600px;
     text-align: center;
     font-style: italic;
-
 }
 
 h1 {
@@ -30,26 +31,13 @@ h1 {
     color: #333;
 }
 h2 {
-    background-color: gold;
     position: absolute;
-    bottom: 300px;
-    right: 90px;
-    font-size: 55px;
+    top: 10%;
+    font-size: xx-large;
     font-style: italic;
-    position: relative;
-    display: inline-block;
-    animation: moveBorder 3s infinite linear;
+    background-color: gold;
 }
-@keyframes moveBorder {
-    0% {
-        border: 2px solid #158FFA; 
-        transform: translateX(0);
-    }
-    100% {
-        border: 2px solid #FF6347; 
-        transform: translateX(100px); 
-    }
-}
+
 .input-group {
     display: flex;
     margin-bottom: 20px;
