@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Function to render the list of items
-    function renderList() {
+    function list() {
         // Clear the current list in the DOM
         shoppingList.innerHTML = '';
 
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     items[index].name = newName;
                     items[index].quantity = newQuantity;
                     updateLocalStorage();
-                    renderList();
+                    list();
                 } else {
                     alert('Please enter a valid name and quantity.');
                 }
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.stopPropagation();
                 items[index].purchased = !items[index].purchased;
                 updateLocalStorage();
-                renderList();
+                list();
             });
 
             // Create and configure the 'Remove' button for individual items
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.stopPropagation();
                 items.splice(index, 1);
                 updateLocalStorage();
-                renderList();
+                list();
             });
 
             // Append buttons to the list item
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 items.push({ name: newItem, quantity: newQuantity, purchased: false });
                 itemInput.value = '';
                 updateLocalStorage();
-                renderList();
+                list();
             } else {
                 alert('Please enter a valid quantity.');
             }
@@ -98,10 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (confirm('Are you sure you want to clear the list?')) {
             items = [];
             updateLocalStorage();
-            renderList();
+            list();
         }
     });
 
     // Initial render of the list
-    renderList();
+    list();
 });
